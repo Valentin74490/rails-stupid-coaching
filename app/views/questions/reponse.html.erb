@@ -1,0 +1,13 @@
+<h1>Ta conversation avec le coach</h1>
+
+<h2>Retrouve ci-dessous les échanges que tu as avec ton coach</h2>
+
+
+<p><% if @question.blank? %>
+""
+<% else %>
+<%= @question %>
+<% end  %>
+</p>
+<p><%= @answer %></p>
+<%= link_to "ask", ask_path %>
